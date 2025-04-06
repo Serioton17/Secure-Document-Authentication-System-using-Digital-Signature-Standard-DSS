@@ -3,7 +3,12 @@
 **Secure Document Authentication System (DSS)** is a Python-based desktop project that allows users to digitally sign text documents and verify their authenticity using the **Digital Signature Algorithm (DSA)**. This ensures that the document has not been tampered with and originates from a verified sender.
 
 ---
+## 🎥 Demo
 
+Watch the demo video here :
+[Drive Link](https://actual-link.com)
+
+---
 ## 🎯 Objectives
 
 - To implement the Digital Signature Standard (DSS) using the Digital
@@ -51,13 +56,6 @@ users.
 
 
 ---
-
-
-## 🎥 Demo
-<video width="640" height="360" controls>
-  <source src="video/mini_project_demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
 
 ## 💻 How to Run
