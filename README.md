@@ -12,6 +12,16 @@
 - Maintain logs for auditing and verification purposes.
 
 ---
+## 🧰 🔐 Features
+✔️ User-specific DSA key generation
+
+✔️ SHA-256 based document hashing
+
+✔️ Signature verification using public keys
+
+✔️ Tamper detection through failed verification
+
+✔️ Detailed logging of all cryptographic actions
 
 ## 📁 File Structure
 
@@ -38,62 +48,78 @@
 - **CSV** – To log metadata and activity trails
 - **OS/Pathlib** – File handling and path operations
 
+
 ---
 
-## 💻 How to Run
 
-### 🔧 Prerequisites
-
-- Install Python 3.x
-- Install dependencies:
-```bash
-pip install pycryptodome
-🛠️ Steps to Use:
-1. Generate Keys:
-bash
-Copy
-Edit
-python keygen.py
-Prompts for username and saves private/public keys in /keys.
-
-2. Sign a Document:
-bash
-Copy
-Edit
-python sign.py
-Select the document and user. The signature is saved to /signatures.
-
-3. Verify a Document:
-bash
-Copy
-Edit
-python verify.py
-Select the document, signature, and public key. Displays verification result.
-
-🔐 Features
-✔️ User-specific DSA key generation
-
-✔️ SHA-256 based document hashing
-
-✔️ Signature verification using public keys
-
-✔️ Tamper detection through failed verification
-
-✔️ Detailed logging of all cryptographic actions
-
-🎥 Demo
+## 🎥 Demo
 📌 Add your demo link here once uploaded
 
 
-📚 References
-PyCryptodome Documentation
+## 💻 How to Run
+## 🔧 Prerequisites
+Install Python 3.x
 
-NIST DSS Standard (FIPS 186)
+Install dependencies using pip:
+pip install pycryptodome
 
-Wikipedia – Digital Signature Algorithm
+## 🛠️ Steps to Use
+## 1️⃣ Generate Keys
 
+Command to run :
+ **python keygen.py**
 
-## Demo
+What it does : Runs the keygen.py script.
 
-Insert gif or link to demo
+Purpose: Prompts the user to enter a username and generates a DSA private/public key pair.
 
+Output:
+
+Saves the keys into the /keys directory as:
+
+username_private.pem (Private Key)
+
+username_public.pem (Public Key)
+
+## 2️⃣ Sign a Document
+Command to run:
+**python sign.py**
+
+What it does: Runs the sign.py script.
+
+Purpose: Allows the user to select a document and sign it using their private key.
+
+Process:
+Hashes the document with SHA-256.
+Encrypts the hash with the private key to create a digital signature.
+
+Output:
+
+Stores the signature in the /signatures folder as a .sig file.
+
+## 3️⃣ Verify a Document
+Command to run:
+**python verify.py**
+
+What it does: Runs the verify.py script.
+
+Purpose: Verifies the authenticity and integrity of the document.
+
+Process: User selects the document, signature file, and the corresponding public key. The script decrypts the signature using the public key and compares it with a new hash of the document.
+
+Output:
+
+✅ If hashes match: "Signature Verified"
+
+❌ If not: "Signature Invalid or Document Tampered"
+
+## 📚 References
+•	Python hashlib Library
+
+•	NIST Digital Signature Standard (DSS)
+
+•	DSA – Digital Signature Algorithm
+
+•	Digital Signature Standard: Overview – Smid & Branstad (1993)
+
+•	Book: Digital Signature Standard (DSS), FIPS Publication 186-5, NIST
