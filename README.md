@@ -30,7 +30,7 @@ users.
 
 ✔️ Tamper detection through failed verification
 
-
+---
 ## 📁 File Structure
 
 | Path / File             | Description                                         |
@@ -117,6 +117,7 @@ Output:
 
 ❌ If not: "Signature Invalid or Document Tampered"
 
+---
 ## 📚 References
 •	Python hashlib Library
 
