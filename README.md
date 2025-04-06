@@ -6,10 +6,12 @@
 
 ## 🎯 Objectives
 
-- Implement a cryptographic signing and verification system using **Digital Signature Standard (DSS)**.
-- Provide secure generation, storage, and use of **DSA key pairs**.
-- Detect any modification in signed documents using robust hash-based validation.
-- Maintain logs for auditing and verification purposes.
+- To implement the Digital Signature Standard (DSS) using the Digital
+Signature Algorithm (DSA).
+- To enable secure generation of public and private key pairs for individual
+users.
+- To provide functionality for signing and verifying files.
+- To ensure detection of tampered or modified documents.
 
 ---
 ## 🧰 🔐 Features
@@ -21,7 +23,6 @@
 
 ✔️ Tamper detection through failed verification
 
-✔️ Detailed logging of all cryptographic actions
 
 ## 📁 File Structure
 
