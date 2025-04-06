@@ -5,10 +5,10 @@
 ---
 ## 🎥 Demo
 
-Watch the demo video here :
-[Drive Link](https://drive.google.com/file/d/1Y2JNtuY1MUS3MA4T4DIIg04BNX-TfC1n/view?usp=sharing)
+🎥 Watch the demo video here: [Google Drive Link](https://drive.google.com/file/d/1Y2JNtuY1MUS3MA4T4DIIg04BNX-TfC1n/view?usp=sharing)
 
-📁 The demo video has been uploaded in the [`video`](./video) folder of this repository and is available for [download here](video/mini_project_demo.mp4).
+
+📁 The demo video has also been uploaded in the [`video`](./video) folder of this repository and is available for [download here](video/mini_project_demo.mp4).
 
 ---
 ## 🎯 Objectives
