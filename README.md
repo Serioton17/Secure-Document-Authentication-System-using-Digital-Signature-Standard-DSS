@@ -63,7 +63,7 @@ Install Python 3.x
 Install dependencies using pip:
 pip install pycryptodome
 
-## 🛠️ Steps to Use
+## 🛠️ Steps to Use :
 ## 1️⃣ Generate Keys
 
 Command to run :
